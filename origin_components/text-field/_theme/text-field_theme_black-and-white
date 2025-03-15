@@ -1,0 +1,12 @@
+.text-field_theme_black-and-white {
+  --tf-text-color: #151419;
+  --tf-background-color: transparent;
+  --tf-border-color: #151419;
+  --tf-focus-color: #87878748;
+  --tf-disabled-color: #878787 ;
+  --tf-disabled-background: #87878787;
+  --tf-valid-border-color: #198754;
+  --tf-invalid-border-color: #dc3545;
+  --tf-invalid-focus-color: #f6cdd1;
+  --tf-valid-focus-color: #c6e1d4;
+}

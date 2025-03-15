@@ -1,0 +1,8 @@
+.button_them_black-and-white {
+  --btn-background: linear-gradient(0deg, #151419, #262626);
+  --btn-text-color: #fbfbfb;
+  --btn-hover-color: #151419;
+  --btn-focus-color: none;
+  --btn-disabled-color: #fbfbfb;
+  --btn-disabled-background: #878787;
+}

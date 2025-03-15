@@ -1,0 +1,8 @@
+.button_theme_sky-blue {
+  --btn-background: #4676D7;
+  --btn-hover-color: #1d49aa;
+  --btn-focus-color: #cbd6ee;
+  --btn-disabled-color: #d2d5db;
+  --btn-disabled-background: #6c7589;
+  --btn-text-color: #fff;
+}

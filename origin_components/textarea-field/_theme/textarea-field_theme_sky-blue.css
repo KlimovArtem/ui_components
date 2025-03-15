@@ -1,0 +1,12 @@
+.textarea-field_theme_sky-blue {
+  --taf-text-color: #000;
+  --taf-background-color: transparent;
+  --taf-border-color: #4676D7;
+  --taf-focus-color: #cbd6ee;
+  --taf-disabled-color: #6c7589;
+  --taf-disabled-background: #d2d5db;
+  --taf-valid-color: #198754;
+  --taf-invalid-color: #dc3545;
+  --taf-invalid-focus-color: #f6cdd1;
+  --taf-valid-focus-color: #c6e1d4;
+}
