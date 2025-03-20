@@ -1,0 +1,9 @@
+.select__button {
+  position: absolute;
+  top: 0;
+  left: calc(100% - calc(var(--select-size) * 2));
+  width: calc(var(--select-size) * 2);
+  height: calc(calc(var(--select-size) * 1.5) + calc(var(--select-size) * 0.75) + 2px);
+  stroke: var(--select-border-color);
+  cursor: pointer;
+}

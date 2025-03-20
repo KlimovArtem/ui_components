@@ -1,0 +1,12 @@
+.select_theme_sky-blue {
+  --select-text-color: #000;
+  --select-background-color: transparent;
+  --select-border-color: #4676D7;
+  --select-focus-color: #cbd6ee;
+  --select-disabled-color: #6c7589;
+  --select-disabled-background: #d2d5db;
+  --select-valid-color: #198754;
+  --select-invalid-color: #dc3545;
+  --select-invalid-focus-color: #f6cdd1;
+  --select-valid-focus-color: #c6e1d4;
+}
