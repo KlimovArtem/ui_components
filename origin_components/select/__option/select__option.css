@@ -15,3 +15,7 @@
     clip-path: inset(0 round	0 0 calc(var(--select-border-radius) - 2px) calc(var(--select-border-radius) - 2px));
 	 }
 }
+
+.select__option[data-selected] {
+  background-color: var(--select-focus-color);
+}

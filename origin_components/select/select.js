@@ -19,11 +19,13 @@
 
 document.querySelectorAll(".select").forEach((select) => {
 	/* инициализаци элементов  */
-	const selectInput = select.querySelector(".select__input"),
-		selectButton = select.querySelector(".select__button"),
-		selectOptions = select.querySelector(".select__options");
-	
+	 const
+	 selectInput = select.querySelector(".select__input"),
+	 selectButton = select.querySelector(".select__button"),
+	 selectOptions = select.querySelector(".select__options");
+	/* сохранение выбранного option для выделения его фона */
 	 let selectedOption = selectOptions.firstElementChild;
+	 selectedOption.setAttribute("data-selected", true);
 	
 	
 	
@@ -57,9 +59,25 @@ document.querySelectorAll(".select").forEach((select) => {
 	/* установка в качестве значения селекта содержимого элемента списка по которому  кликнули */
 		option.addEventListener("click", (event) => {
 			selectInput.value = option.innerText;
+			selectedOption.removeAttribute("data-selected");
 			selectedOption = option;
 			selectOptions.style.visibility = "hidden";
+			selectedOption.setAttribute("data-selected", true);
 			selectInput.focus();
+		});
+		/* cнять выделение с выбраного option пока мышь над списком */
+		selectOptions.addEventListener("mouseenter", event => {
+			console.log(`сработало событие на ${event.target}`);
+			if (selectedOption.hasAttribute("data-selected")){
+				selectedOption.removeAttribute("data-selected");
+			};
+		});
+		/* установить выделение на option когда мышь покидает список*/
+		selectOptions.addEventListener("mouseleave", event => {
+			console.log(`сработало событие на ${event.target}`);
+			if (!selectedOption.hasAttribute("data-selected")){
+				selectedOption.setAttribute("data-selected", true);
+			};
 		});
 	});
 	
@@ -70,7 +88,5 @@ document.querySelectorAll(".select").forEach((select) => {
      selectOptions.style.visibility = "hidden";
    };
 	});
-	
-	/* выделение обекта установленного как выбранного */
 	
 });
